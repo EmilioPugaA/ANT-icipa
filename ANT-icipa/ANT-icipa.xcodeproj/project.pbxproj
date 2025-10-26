@@ -10,9 +10,22 @@
 		D93679F82EAE2C450016B565 /* ANT-icipa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ANT-icipa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7B936D882EAE5DF50003BF10 /* Exceptions for "ANT-icipa" folder in "ANT-icipa" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D93679F72EAE2C450016B565 /* ANT-icipa */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D93679FA2EAE2C450016B565 /* ANT-icipa */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7B936D882EAE5DF50003BF10 /* Exceptions for "ANT-icipa" folder in "ANT-icipa" target */,
+			);
 			path = "ANT-icipa";
 			sourceTree = "<group>";
 		};
@@ -253,20 +266,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DVFJ9MF2K;
+				DEVELOPMENT_TEAM = Y5R8672K59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ANT-icipa/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "ANTicipa utiliza Face ID para iniciar sesión de forma rápida y segura.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ANTicipa usa el micrófono para escuchar tus preguntas a Capi";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "ANTicipa necesita acceso al reconocimiento de voz para hablar con Capi.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tec.mx.ANT-icipa";
+				PRODUCT_BUNDLE_IDENTIFIER = EnmanuelRivas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -281,20 +299,25 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DVFJ9MF2K;
+				DEVELOPMENT_TEAM = Y5R8672K59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ANT-icipa/Info.plist";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "ANTicipa utiliza Face ID para iniciar sesión de forma rápida y segura.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "ANTicipa usa el micrófono para escuchar tus preguntas a Capi";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "ANTicipa necesita acceso al reconocimiento de voz para hablar con Capi.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "tec.mx.ANT-icipa";
+				PRODUCT_BUNDLE_IDENTIFIER = EnmanuelRivas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
