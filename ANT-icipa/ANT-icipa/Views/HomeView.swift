@@ -205,6 +205,10 @@ struct HomeView: View {
             .navigationDestination(isPresented: $goToProfile) {
                 DashboardView()
             }
+            .navigationDestination(isPresented: $goToNotifications) {
+                NotificationView() // ✅ conecta el botón de campana
+            }
+
 
             
             VStack {
@@ -546,6 +550,7 @@ struct HistorialGastosSection: View {
         .navigationDestination(isPresented: $showFullHistory) {
             HistorialCompletoView()
         }
+        
     }
     
     func fetchTransactions() async {
