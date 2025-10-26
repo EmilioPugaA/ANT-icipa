@@ -67,16 +67,16 @@ struct DashboardView: View {
                                     .font(.system(size: 30, weight: .bold))
                                     .foregroundColor(.white)
                             }
-                            .padding(.top, UIApplication.shared.connectedScenes
-                                .compactMap { ($0 as? UIWindowScene)?.windows.first?.safeAreaInsets.top }
-                                .first ?? 60)
+                            // ✅ Ajuste dinámico del notch y mejor centrado
+                            .padding(.top, 20)
                             
-                            Text("Observa como avanza tu progreso, y cómo Piquiete aporta a tus metas")
+                            Text("Observa cómo avanza tu progreso y cómo Piquiete aporta a tus metas")
                                 .font(.system(size: 18))
                                 .foregroundColor(.white.opacity(0.9))
                                 .padding(.horizontal, 20)
                         }
                         .padding(.horizontal, 38)
+                        .padding(.top, 55) // ✅ Centra el bloque completo en el header
                     }
                     .frame(height: 230)
                     .clipShape(BottomRoundedShape(radius: 25))
@@ -213,10 +213,10 @@ struct DashboardView: View {
                 .transition(.scale)
             }
         }
-        .ignoresSafeArea(edges: .top) // ✅ asegura que el header azul toque el borde superior
+        .ignoresSafeArea(edges: .top) // ✅ Header azul llega al borde superior
     }
     
-    // MARK: - Carga de datos reales
+    // MARK: - Carga de datos reales desde API
     @MainActor
     func fetchFinancialData() async {
         guard userId > 0 else { return }
